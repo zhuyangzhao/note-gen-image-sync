@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="560" fill="#FAFBFC" rx="8"/>
+
+  <!-- 标题 -->
+  <text x="340" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="bold" fill="#1A1A2E">合并报表内部交易抵销框架</text>
+  <text x="340" y="50" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" fill="#888">CAS 33 第27-31条 · 集团内部商品交易</text>
+
+  <!-- ===== 案例参数区 ===== -->
+  <rect x="20" y="65" width="640" height="62" rx="8" fill="#EEF2FF" stroke="#8B9DC3" stroke-width="1"/>
+  <text x="35" y="86" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="bold" fill="#4A5568">📋 案例参数：P（母公司）→ S（子公司）</text>
+  <text x="35" y="106" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" fill="#555">
+    含税售价 <tspan font-weight="bold" fill="#E53E3E">100.00 万</tspan>（13%税率） | 不含税收入 <tspan font-weight="bold" fill="#2B6CB0">88.50 万</tspan> | 税额 <tspan font-weight="bold" fill="#D69E2E">11.50 万</tspan>
+  </text>
+  <text x="35" y="121" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" fill="#555">
+    销售成本 <tspan font-weight="bold" fill="#38A169">70.00 万</tspan> | 内部毛利 <tspan font-weight="bold" fill="#E53E3E">18.50 万</tspan> | 毛利率 <tspan font-weight="bold">20.90%</tspan>
+  </text>
+
+  <!-- ===== 三个抵销区域 ===== -->
+
+  <!-- 抵销1：收入成本 -->
+  <rect x="20" y="142" width="200" height="200" rx="8" fill="#FFF5F5" stroke="#FEB2B2" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="20" y="142" width="200" height="30" rx="8" fill="#E53E3E"/>
+  <rect x="20" y="157" width="200" height="15" fill="#E53E3E"/>
+  <text x="120" y="162" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="bold" fill="#FFF">抵销1：收入与成本</text>
+  <text x="30" y="190" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10" fill="#888">CAS 33 第30条</text>
+
+  <text x="30" y="210" font-family="monospace" font-size="10" fill="#333">Dr 营业收入(P)</text>
+  <text x="170" y="210" text-anchor="end" font-family="monospace" font-size="10" font-weight="bold" fill="#E53E3E">88.50</text>
+  <text x="30" y="228" font-family="monospace" font-size="10" fill="#333">Cr 营业成本(S)</text>
+  <text x="170" y="228" text-anchor="end" font-family="monospace" font-size="10" fill="#333">88.50</text>
+
+  <line x1="30" y1="238" x2="190" y2="238" stroke="#FEB2B2" stroke-width="0.5"/>
+  <text x="30" y="254" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#888">P的营业收入与S的</text>
+  <text x="30" y="270" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#888">营业成本全额抵销</text>
+
+  <rect x="30" y="282" width="180" height="50" rx="4" fill="#FFF0F0" stroke="#FEB2B2" stroke-width="0.5"/>
+  <text x="120" y="297" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#C53030">仅合并报表层面</text>
+  <text x="120" y="315" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#C53030">个别报表不受影响</text>
+
+  <!-- 抵销2：应收应付 -->
+  <rect x="240" y="142" width="200" height="200" rx="8" fill="#FFFBEB" stroke="#F6E05E" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="240" y="142" width="200" height="30" rx="8" fill="#D69E2E"/>
+  <rect x="240" y="157" width="200" height="15" fill="#D69E2E"/>
+  <text x="340" y="162" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="bold" fill="#FFF">抵销2：应收与应付</text>
+  <text x="250" y="190" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10" fill="#888">CAS 33 第31条</text>
+
+  <text x="250" y="210" font-family="monospace" font-size="10" fill="#333">Dr 应付账款-P(S)</text>
+  <text x="410" y="210" text-anchor="end" font-family="monospace" font-size="10" font-weight="bold" fill="#D69E2E">100.00</text>
+  <text x="250" y="228" font-family="monospace" font-size="10" fill="#333">Cr 应收账款-S(P)</text>
+  <text x="410" y="228" text-anchor="end" font-family="monospace" font-size="10" fill="#333">100.00</text>
+
+  <line x1="250" y1="238" x2="410" y2="238" stroke="#F6E05E" stroke-width="0.5"/>
+  <text x="250" y="254" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#888">内部债权债务全额</text>
+  <text x="250" y="270" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#888">抵销（含暂估部分）</text>
+
+  <rect x="250" y="282" width="180" height="50" rx="4" fill="#FFF8E1" stroke="#F6E05E" stroke-width="0.5"/>
+  <text x="340" y="297" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#975A16">含税 vs 不含税</text>
+  <text x="340" y="315" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#975A16">注意税金差额处理</text>
+
+  <!-- 抵销3：未实现利润 -->
+  <rect x="460" y="142" width="200" height="200" rx="8" fill="#F0FFF4" stroke="#9AE6B4" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="460" y="142" width="200" height="30" rx="8" fill="#38A169"/>
+  <rect x="460" y="157" width="200" height="15" fill="#38A169"/>
+  <text x="560" y="162" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="bold" fill="#FFF">抵销3：未实现利润</text>
+  <text x="470" y="190" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10" fill="#888">CAS 33 第30条</text>
+
+  <text x="470" y="210" font-family="monospace" font-size="10" fill="#333">Dr 营业成本</text>
+  <text x="630" y="210" text-anchor="end" font-family="monospace" font-size="10" font-weight="bold" fill="#38A169">18.50</text>
+  <text x="470" y="228" font-family="monospace" font-size="10" fill="#333">Cr 存货</text>
+  <text x="630" y="228" text-anchor="end" font-family="monospace" font-size="10" fill="#333">18.50</text>
+
+  <line x1="470" y1="238" x2="630" y2="238" stroke="#9AE6B4" stroke-width="0.5"/>
+  <text x="470" y="254" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#888">S未售出存货中包含</text>
+  <text x="470" y="270" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#888">的P的毛利部分抵销</text>
+
+  <rect x="470" y="282" width="180" height="50" rx="4" fill="#E6FFED" stroke="#9AE6B4" stroke-width="0.5"/>
+  <text x="560" y="297" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#276749">次年尚未售出时</text>
+  <text x="560" y="315" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#276749">追溯调整期初留存</text>
+
+  <!-- ===== 连接箭头（三大抵销区域之间） ===== -->
+  <line x1="220" y1="242" x2="240" y2="242" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowGray)"/>
+  <line x1="440" y1="242" x2="460" y2="242" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowGray)"/>
+
+  <!-- ===== 抵销分录汇总 ===== -->
+  <rect x="20" y="357" width="640" height="73" rx="8" fill="#1A202C" filter="url(#shadow)"/>
+  <text x="35" y="380" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="bold" fill="#A0AEC0">合并工作底稿 — 汇总抵销分录</text>
+  <text x="35" y="403" font-family="monospace" font-size="10.5" fill="#E2E8F0">Dr 营业收入    88.50  |  Dr 应付账款    100.00  |  Dr 营业成本   18.50</text>
+  <text x="35" y="420" font-family="monospace" font-size="10.5" fill="#E2E8F0">Cr 营业成本    88.50  |  Cr 应收账款    100.00  |  Cr 存货       18.50</text>
+
+  <!-- ===== 暂估专题提示 ===== -->
+  <rect x="20" y="443" width="640" height="50" rx="8" fill="#F3E8FF" stroke="#B794F4" stroke-width="1"/>
+  <text x="35" y="462" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="bold" fill="#6B46C1">⚠ 暂估场景注意事项</text>
+  <text x="35" y="480" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10" fill="#553C9A">P暂估应收（含税100万） vs S暂估应付（不含税88.50万），差额11.50万为待转销项税额，合并层面三者一并抵销</text>
+
+  <!-- 底部 -->
+  <text x="340" y="520" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10" fill="#A0AEC0">依据：中国企业会计准则 CAS 33《合并财务报表》· 记账账编制 · 2026年7月</text>
+
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#CBD5E0"/>
+    </marker>
+  </defs>
+</svg>
